@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.1" />
+    <link rel="stylesheet" href="style.css?=1.351" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta content="3600" http-equiv="refresh" />
+    <title>Papan Informasi</title>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "1473e3c6-8d70-4fca-a2ac-b6e38598e286",
+      safari_web_id: "web.onesignal.auto.43666e9c-a8ad-4b1e-8de4-10291bcbdb86",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
+  </head>
+  <script type="text/javascript">
+    var timeleft = 3600;
+    var downloadTimer = setInterval(function () {
+      if (timeleft <= 0) {
+        clearInterval(downloadTimer);
+      }
+      document.getElementById('progressBar').value = 3600 - timeleft;
+      timeleft -= 1;
+    }, 1000);
+  </script>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div id="ww_6286337b5aa9f" v='1.20' loc='id' a='{"t":"horizontal","lang":"id","ids":["wl4231"],"cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","el_nme":3}'>Weather Data Source: <a href="https://cuacalab.id/cuaca_yogyakarta/hari_ini/" id="ww_6286337b5aa9f_u" target="_blank">cuaca Yogyakarta hari ini per jam</a></div><script async src="https://srv1.weatherwidget.org/js/?id=ww_6286337b5aa9f"></script>
+      </div>
+      <div class="navbar">
+        <img src="img/screen-01.png" alt="" width="100%" />
+        <h2>Website: masjidassalam.or.id</h2>
+      </div>
+      <div class="navbar">
+        <h4>
+          <script type="text/javascript">
+            var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+
+            var myDays = ['Ahad', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+
+            var date = new Date();
+
+            var day = date.getDate();
+
+            var month = date.getMonth();
+
+            var thisDay = date.getDay(),
+              thisDay = myDays[thisDay];
+
+            var yy = date.getYear();
+
+            var year = yy < 1000 ? yy + 1900 : yy;
+
+            document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+          </script>
+        </h4>
+        <div class="jam-digital">
+          <div id="jam"></div>
+          <div id="unit"></div>
+          <div id="saldo"><h3>Saldo : Rp.22.446.900,-</h3></div>
+        </div>
+      </div>
+    </div>
+    <div class="prog">
+      <progress value="0" max="3600" id="progressBar"></progress>
+    </div>
+    <div class="container-top">
+      <div class="kotak1">
+        <!-- <iframe
+          id="myIframe"
+          src="https://timesprayer.com/widgets.php?frame=1&amp;lang=en&amp;name=yogyakarta&amp;sound=true&amp;method=12&amp;time=0&amp;fcolor=6A0A0A&amp;tcolor=000000&amp;frcolor=002D4E"
+          style="border: none; overflow: hidden; width: 100%; height: 165px; font-size: 30px"
+        ></iframe> -->
+        <table class="demo">
+          <h3>
+            Jadwal Sholat
+          <h3>
+          <thead>
+            <tr>
+              <th>Subuh</th>
+              <th>Terbit</th>
+              <th>Dzuhur</th>
+              <th>Ashar</th>
+              <th>Maghrib</th>
+              <th>Isya'</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>04:26</td>
+              <td>05:35</td>
+              <td>11:37</td>
+              <td>14:54</td>
+              <td>17:37</td>
+              <td>18:47</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="konten">
+      <div class="kotak">
+        <div id="slider">
+          <ul id="slideWrap">
+            <li>
+              <div class="announ">
+                
+              <h1>PENGUMUMAN :</h1>
+              <h2>Khotib Sholat Jum'at Pon, 9 September 2022</h2>
+              <h3>Wakid Wagiyanto, S.Si | Tegalmulyo Pakuncen</h3>
+              <hr>
+              <h2>Pendaftaran Shohibul Qurban</h2>
+              <h3>Bpk. Purwanto : 0895 4111 47293</h3>
+              <h3>Bpk. Taufiq : 0813 2290 5240</h3>
+            </div>
+            </li>
+            <li>
+              <div class="jumat">
+                <table class="tg" style="table-layout: fixed; width: 100%">
+                  <colgroup>
+                    <col style="width: 151px" />
+                    <col style="width: 171px" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="tg-f3j0" colspan="2">INFAQ SHOLAT JUM'AT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-8d8ji">Bulan Sebelumnya</td>
+                      <td class="tg-7zrl">Rp.3.518.500,-</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-8d8j">02 September 2022</td>
+                      <td class="tg-7zrl">Rp.63.000,-</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-8d8j">09 September 2022</td>
+                      <td class="tg-7zrl">Rp.472.000,-</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-8d8j">16 September 2022</td>
+                      <td class="tg-7zrl">Rp.</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-8d8j">23 September 2022</td>
+                      <td class="tg-7zrl">Rp.</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-8d8j">30 September 2022</td>
+                      <td class="tg-7zrl">Rp.</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-17h2">Jumlah</td>
+                      <td class="tg-8reb">Rp.4.053.500,-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li><img src="img/statistik3.jpg" alt="" /></li>
+            <li>
+              <div class="donasi">
+                <h3>Donasi</h3>
+              <h4>Pembelian Ambulans</h4>
+              <h5>Kebutuhan Biaya Rp.235.000.000,-</h5> 
+              <h5>Terkumpul Rp.0,-</h5> 
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                  0%
+                </div>
+              </div>
+              <hr>
+              <h4>Pemasangan AC 2 Unit</h4>
+              <h5>Kebutuhan Biaya Rp.12.600.000,-</h5> 
+              <h5>Terkumpul Rp.0,-</h5> 
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="00" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                  0%
+                </div>
+              </div>
+            </div>
+          </li>
+          </ul>
+          <a id="prev" href="#"></a>
+          <a id="next" href="#"></a>
+        </div>
+        <script>
+          var responsiveSlider = function () {
+            var slider = document.getElementById('slider');
+            var sliderWidth = slider.offsetWidth;
+            var slideList = document.getElementById('slideWrap');
+            var count = 1;
+            var items = slideList.querySelectorAll('li').length;
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+
+            window.addEventListener('resize', function () {
+              sliderWidth = slider.offsetWidth;
+            });
+
+            var prevSlide = function () {
+              if (count > 1) {
+                count = count - 2;
+                slideList.style.left = '-' + count * sliderWidth + 'px';
+                count++;
+              } else if ((count = 1)) {
+                count = items - 1;
+                slideList.style.left = '-' + count * sliderWidth + 'px';
+                count++;
+              }
+            };
+
+            var nextSlide = function () {
+              if (count < items) {
+                slideList.style.left = '-' + count * sliderWidth + 'px';
+                count++;
+              } else if ((count = items)) {
+                slideList.style.left = '0px';
+                count = 1;
+              }
+            };
+
+            next.addEventListener('click', function () {
+              nextSlide();
+            });
+
+            prev.addEventListener('click', function () {
+              prevSlide();
+            });
+
+            setInterval(function () {
+              nextSlide();
+            }, 20000);
+          };
+
+          window.onload = function () {
+            responsiveSlider();
+          };
+        </script>
+      </div>
+
+      <div class="kotak">
+        <div class="kotak2">
+          <div id="video">
+            <!-- <div class="teks">
+              <h3>Rekening donasi Masjid As-Salam</h3>
+            </div> -->
+          
+          <iframe src="https://www.youtube.com/embed/MROj3NBs7Xo?&autoplay=1&cc_lang_pref=id&cc_load_policy=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=MROj3NBs7Xo&mute=1&vq=small" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="runtext-container">
+      <div class="main-runtext">
+        <marquee>
+          <div class="holder">
+            <div class="text-container">
+              <a>"Jika mereka berpaling (dari keimanan), maka katakanlah: 'Cukuplah Allah bagiku; tidak ada Tuhan selain Dia. Hanya kepada-Nya aku bertawakkal dan Dia adalah Tuhan yang memiliki 'Arsy yang agung'." (Q.S. At-Taubah: 129)</a>
+              <!-- <a>&nbsp; Tetap Jaga Protokol Kesehatan Selama Beribadah, Gunakan Masker, Cuci Tangan Sebelum dan Sesudah Beribadah &nbsp; | &nbsp; Buanglah Sampah Pada Tempatnya &nbsp; | &nbsp; Jagalah Kebersihan</a> -->
+            </div>
+          </div>
+        </marquee>
+      </div>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName('mySlides');
+        let dots = document.getElementsByClassName('dot');
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+        setTimeout(showSlides, 20000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
